@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>{{ titulo }}</h1>
+      <app-form-calculadora
+        (resultado)="sacarResultado($event)"
+      ></app-form-calculadora>
+      <app-resultado
+        [resultado]="resultado"
+        [mostrarResultado]="mostrarResultado"
+      ></app-resultado>
+    </div>
+  </div>
+</div>

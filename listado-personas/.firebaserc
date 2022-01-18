@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "listado-personas-1da72": {
+      "hosting": {
+        "listado-personas": [
+          "listado-personas-1da72"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "listado-personas-1da72"
+  }
+}

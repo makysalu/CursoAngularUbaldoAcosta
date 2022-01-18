@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>{{ titulo }}</h1>
+  <app-formulario
+    (resultado)="sacarResultado($event)"
+  >
+  </app-formulario>
+  <app-resultado
+    [resultado]="resultado"
+  ></app-resultado>
+</div>

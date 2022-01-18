@@ -1,0 +1,17 @@
+<app-header
+  [titulo]="titulo"
+  [saldoTotal]="saldoTotal"
+  [ingresoTotal]="ingresoTotal"
+  [gastoTotal]="gastoTotal"
+>
+</app-header>
+<app-formulario
+  (calculoTotales)="calculoTotales()"
+></app-formulario>
+<app-listado-component
+  [gastos]="gastos"
+  [gastoTotal]="gastoTotal"
+
+  [ingresos]="ingresos"
+>
+</app-listado-component>

@@ -1,0 +1,16 @@
+<app-header
+    [presupuestoTotal]="getPresupuestoTotal()"
+    [ingresoTotal]="getIngresoTotal()"
+    [gastoTotal]="getGastoTotal()"
+    [porcentageTotal]="  getPorcentajeTotal()"
+>
+</app-header>
+<app-formulario
+
+></app-formulario>
+<app-listado
+  [gastos]="gastos"
+  [ingresos]="ingresos"
+  [ingresoTotal]="getIngresoTotal()"
+>
+</app-listado>

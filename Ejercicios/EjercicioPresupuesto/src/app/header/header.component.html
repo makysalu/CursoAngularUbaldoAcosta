@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">{{titulo}}</h1>
+        </div>
+        <div class="col-12">
+            <div class="container text-center">
+                <h5>{{saldoTotal}}€</h5>
+            </div>
+        </div>
+        <div class="col-3"></div>
+        <div class="col-6 mt-2 mb-2 align-middle bg-info p-2">
+            <div class="row">
+                <div class="col-6">
+                    INGRESOS
+                </div>
+                <div class="col-6 text-white">
+                    {{ingresoTotal}}€
+                </div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-6 mb-4 align-middle bg-danger p-2">
+            <div class="row">
+                <div class="col-5">
+                    GASTOS
+                </div>
+                <div class="col-5 text-white">
+                    {{gastoTotal}}€
+                </div>
+                <div class="col-2 text-white">
+                    {{((gastoTotal/(gastoTotal+ingresoTotal))*100).toFixed(0)}}%
+                </div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>

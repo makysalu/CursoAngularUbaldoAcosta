@@ -1,0 +1,30 @@
+<form>
+  <div class="mb-3">
+    <label for="operadorA" class="form-label">Operador A</label>
+    <input 
+        type="number" 
+        class="form-control" 
+        id="operadorA" 
+        name = "operadorA"
+        [(ngModel)]='operadorA'
+    />
+  </div>
+  <div class="mb-3">
+    <label for="operadorB" class="form-label">Operador B</label>
+    <input
+        type="number"
+        class="form-control"
+        id="operardorB"
+        name = "operadorB"
+        [(ngModel)]='operadorB'
+    />
+  </div>
+    <button 
+        type="submit" 
+        class="btn btn-primary" 
+        (click)="funcionSuma()"
+    >
+    Sumar
+    </button>
+</form>
+<div>Resultado: {{ total }}</div>
